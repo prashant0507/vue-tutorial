@@ -56,6 +56,26 @@ const router = createRouter({
       path: '/parent-to-child', 
       name: 'parent-to-child',
       component: () => import('../views/ParentCard.vue') 
+    },
+    {
+      path: '/class-binding', 
+      name: 'class-binding',
+      component: () => import('../views/ClassBinding.vue')
+    },
+    {
+      path: '/props', 
+      name: 'props',
+      component: () => import('../views/Props.vue')
+    },
+    {
+      path: '/ref', 
+      name: 'ref',
+      component: () => import('../views/Ref.vue')
+    },
+    {
+      path: '/modifiers', 
+      name: 'modifiers',
+      component: () => import('../views/Modifiers.vue')
     }
   ]
 })

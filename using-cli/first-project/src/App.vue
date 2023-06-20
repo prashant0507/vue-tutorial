@@ -25,12 +25,16 @@ import AboutChild from './views/AboutChild.vue'
         <!--<RouterLink to="/about">About</RouterLink>-->
         <RouterLink to="/html-binding">HTML Binding</RouterLink>
         <RouterLink to="/variable">Variable</RouterLink>
-        <RouterLink to="/methods">Methods</RouterLink> 
+        <RouterLink to="/methods">Methods</RouterLink>
         <RouterLink to="/two-way-binding">Two Way Binding</RouterLink>
         <RouterLink to="/for">For Loop</RouterLink>
         <RouterLink to="/if-else-if-else">If/Else</RouterLink>
-        <RouterLink to="/forms">Form</RouterLink> 
-         <RouterLink to="/parent-to-child">Parent To Child</RouterLink>
+        <RouterLink to="/forms">Form</RouterLink>
+        <RouterLink to="/parent-to-child">Parent To Child</RouterLink>
+        <RouterLink to="/class-binding">Class Binding</RouterLink>
+        <RouterLink to="/props">Props (Component Communication)</RouterLink>
+        <RouterLink to="/ref">Ref</RouterLink>
+        <RouterLink to="/modifiers">Modifiers</RouterLink>
       </nav>
     </div>
   </header>
@@ -40,7 +44,6 @@ import AboutChild from './views/AboutChild.vue'
 
 <script>
 export default {
-  
   data() {
     return {
       profile: {
@@ -51,8 +54,8 @@ export default {
     }
   },
   methods: {
-    parentFun(name='defalt') {
-      alert("parent function called=>> "+name);
+    parentFun(name = 'defalt') {
+      alert('parent function called=>> ' + name)
     }
   }
 }
@@ -90,11 +93,12 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border: 1px solid var(--color-border);
+  border-bottom: none;
 }
 
-nav a:first-of-type {
-  border: 0;
+nav a:last-child{
+  border-bottom: 1px solid var(--color-border);
 }
 
 @media (min-width: 1024px) {
@@ -102,7 +106,7 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-    border-bottom: 1px solid #c7c7c7;
+    max-width: 350px;
   }
 
   .logo {
@@ -121,7 +125,7 @@ nav a:first-of-type {
     font-size: 1rem;
 
     padding: 1rem 0;
-    margin-top: 1rem;
+    margin-top: 0;
   }
 }
 </style>

@@ -27,4 +27,7 @@ export default {
   height: 100px;
   width: 100px;
 }
+button{
+  cursor: pointer;
+}
 </style>

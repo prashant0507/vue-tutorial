@@ -28,7 +28,7 @@ a,
   }
 
   #app {
-    display: block;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
@@ -36,4 +36,9 @@ a,
 
 h1{
   color: red;
+}
+
+nav a {
+  border-bottom: 1px solid #c7c7c7;
+  width: 100%;
 }
