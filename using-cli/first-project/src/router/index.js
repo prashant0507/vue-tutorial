@@ -76,6 +76,11 @@ const router = createRouter({
       path: '/modifiers', 
       name: 'modifiers',
       component: () => import('../views/Modifiers.vue')
+    },
+    {
+      path: '/non-props', 
+      name: 'non-props',
+      component: () => import('../views/NonProps.vue')
     }
   ]
 })

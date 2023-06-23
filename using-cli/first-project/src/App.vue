@@ -35,6 +35,7 @@ import AboutChild from './views/AboutChild.vue'
         <RouterLink to="/props">Props (Component Communication)</RouterLink>
         <RouterLink to="/ref">Ref</RouterLink>
         <RouterLink to="/modifiers">Modifiers</RouterLink>
+        <RouterLink to="/non-props">Non Props</RouterLink>
       </nav>
     </div>
   </header>
