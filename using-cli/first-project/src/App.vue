@@ -36,6 +36,10 @@ import AboutChild from './views/AboutChild.vue'
         <RouterLink to="/ref">Ref</RouterLink>
         <RouterLink to="/modifiers">Modifiers</RouterLink>
         <RouterLink to="/non-props">Non Props</RouterLink>
+        <RouterLink to="/computed-property">Computed Property</RouterLink>
+        <RouterLink to="/watchers">Watchers</RouterLink>
+        <RouterLink to="/slots">Slots</RouterLink>
+        <RouterLink to="/dynamic-component">Dynamic Component</RouterLink>
       </nav>
     </div>
   </header>

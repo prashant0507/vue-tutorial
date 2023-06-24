@@ -81,6 +81,26 @@ const router = createRouter({
       path: '/non-props', 
       name: 'non-props',
       component: () => import('../views/NonProps.vue')
+    },
+    {
+      path: '/computed-property', 
+      name: 'computed-property',
+      component: () => import('../views/ComputedProperty.vue') 
+    },
+    {
+      path: '/watchers', 
+      name: 'watchers',
+      component: () => import('../views/Watchers.vue')
+    },
+    {
+      path: '/slots', 
+      name: 'slots',
+      component: () => import('../views/Slots.vue') 
+    },
+    {
+      path: '/dynamic-component', 
+      name: 'dynamic-component',
+      component: () => import('../views/DynamicComponent.vue') 
     }
   ]
 })
